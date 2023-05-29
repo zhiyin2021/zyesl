@@ -1,4 +1,4 @@
-package kernel
+package zyesl
 
 type Session struct {
 	uuid   string

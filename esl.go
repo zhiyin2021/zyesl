@@ -4,7 +4,7 @@
 // I didn't write all of this code so you could say it's yours.
 // MIT License
 
-package kernel
+package zyesl
 
 import (
 	"bufio"
@@ -232,7 +232,7 @@ func (c *SocketConnection) SendMsg(msg map[string]string, uuid, data string) (er
 }
 
 // ReadMessage - Will read message from channels and return them back accordingy.
-// If error is received, error will be returned. If not, message will be returned back!
+//  If error is received, error will be returned. If not, message will be returned back!
 func (c *SocketConnection) ReadMessage() (*Message, error) {
 	// Debug("Waiting for connection message to be received ...")
 	select {
